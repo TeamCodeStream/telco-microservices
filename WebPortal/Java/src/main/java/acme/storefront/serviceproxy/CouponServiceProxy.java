@@ -6,11 +6,14 @@ import java.util.Map;
 
 import com.newrelic.api.agent.Trace;
 import jodd.json.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class CouponServiceProxy extends ServiceProxy
 {
     private String _root;
     private static final String _route = "/api/v1/coupons";
+    private static final Logger logger = LogManager.getLogger(CouponServiceProxy.class);
 
     public CouponServiceProxy(String root)
     {
@@ -32,15 +35,16 @@ public class CouponServiceProxy extends ServiceProxy
         String url = getServiceUri() + "/" + product_id + "/getCoupon";
         String coupon = "";
 
+        logger.info("Calling getCoupon at " + getServiceUri());
         String responseJson = getResponse(url);
-        try{
+        try {
             Map map = jsonParser.parse(responseJson);
             coupon =  (String) map.get("id");
             JavaAgentFacade.addCustomParameter("couponCode", coupon);
 
             String amount =  (String) map.get("id");
             JavaAgentFacade.addCustomParameter("couponAmount", amount);
-        }catch(Exception e){
+        } catch(Exception e) {
             JavaAgentFacade.addCustomParameter("coupon", "FAIL!!!");
         }
 
