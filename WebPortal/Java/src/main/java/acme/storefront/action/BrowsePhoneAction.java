@@ -41,6 +41,8 @@ public class BrowsePhoneAction {
     public String browsePhone() throws IOException {
         String productId = id.toString();
 
+        long start = System.currentTimeMillis();
+
         logger.debug("Starting Browse Phone ("+ productId +") transaction");
 
         String username = (String) sessionMap.get("username");
@@ -66,7 +68,9 @@ public class BrowsePhoneAction {
 
         JavaAgentFacade.addCustomParameter("BrowsePhoneResult", "success");
 
-        logger.debug("Finished Browse Phone ("+ productId +") transaction");
+        long end = System.currentTimeMillis() - start;
+
+        logger.debug("Finished Browse Phone ("+ productId +") transaction in " + String.valueOf(end) + "ms");
 
         return "/browse/phone.jsp";
     }
