@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'sinatra', '>= 2.0.8.1'
+gem 'typhoeus'
+gem 'fire-and-forget', :require => 'fire/forget'
+
+gem "sinatra-activerecord", ">= 2.0.18"
+gem "sqlite3"
+gem 'mysql2'
+gem 'activerecord-mysql2-adapter'
+gem "rake"
+gem 'newrelic_rpm'
