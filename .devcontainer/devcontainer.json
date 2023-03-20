@@ -32,6 +32,7 @@
       // Set *default* container specific settings.json values on container create.
       "settings": {
         "codestream.serverUrl": "https://api.codestream.com",
+        "diffEditor.codeLens": true,
         "workbench.colorTheme": "GitHub Dark Default",
         "remote.extensionKind": {
           "codestream.codestream": [
