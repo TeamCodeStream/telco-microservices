@@ -1,0 +1,19 @@
+// table example
+
+FROM Transaction SELECT *
+
+// billboard example
+
+FROM Transaction SELECT count(*)
+
+// line example
+
+FROM Transaction SELECT count(*) TIMESERIES
+
+// multi-line example
+
+FROM Transaction SELECT average(duration) * count(*) facet name TIMESERIES
+
+// json example
+
+FROM Transaction SELECT count(*) facet name TIMESERIES
