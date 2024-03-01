@@ -2,10 +2,15 @@
 
 Open the following file to demo code-level metrics.
 
-- [InsightsInterceptor](WebPortal/Java/src/main/java/acme/storefront/InsightsInterceptor.java)
+- [ValidateCouponAction](WebPortal/Java/src/main/java/acme/storefront/action/ValidateCouponAction.java)
+
+And open the following file to demo saving queries to a NRQL file.
+
+- [demo_queries](demo_queries.nrql)
 
 The following files also have codelenses, many of which were acheived via custom instrumentation.
 
+- [InsightsInterceptor](WebPortal/Java/src/main/java/acme/storefront/InsightsInterceptor.java)
 - [BrowsePhoneAction](WebPortal/Java/src/main/java/acme/storefront/action/BrowsePhoneAction.java)
 - [BrowsePhonesAction](WebPortal/Java/src/main/java/acme/storefront/action/BrowsePhonesAction.java)
 - [BrowsePlanAction](WebPortal/Java/src/main/java/acme/storefront/action/BrowsePlanAction.java)
@@ -14,8 +19,6 @@ The following files also have codelenses, many of which were acheived via custom
 - [PurchaseAction](WebPortal/Java/src/main/java/acme/storefront/action/PurchaseAction.java)
 - [ValidateCouponAction](WebPortal/Java/src/main/java/acme/storefront/action/ValidateCouponAction.java)
 - [ViewCartAction](WebPortal/Java/src/main/java/acme/storefront/action/ViewCartAction.java)
-
-
 - [CouponServiceProxy](WebPortal/Java/src/main/java/acme/storefront/serviceproxy/CouponServiceProxy.java)
 - [InventoryServiceProxy](WebPortal/Java/src/main/java/acme/storefront/serviceproxy/InventoryServiceProxy.java)
 - [PlanServiceProxy](WebPortal/Java/src/main/java/acme/storefront/serviceproxy/PlanServiceProxy.java)
