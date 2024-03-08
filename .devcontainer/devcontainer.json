@@ -3,7 +3,9 @@
 {
   "name": "Java",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/vscode/devcontainers/java:0-8",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
 
   "hostRequirements": {
     "cpus": 4,
@@ -44,8 +46,8 @@
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "redhat.java",
-        "codestream.codestream",
-        //  "/home/vscode/codestream.vsix",
+//        "codestream.codestream",
+          "/root/codestream.vsix",
         "ms-azuretools.vscode-docker"
       ]
     }
