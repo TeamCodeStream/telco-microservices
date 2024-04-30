@@ -32,7 +32,6 @@
       // Set *default* container specific settings.json values on container create.
       "settings": {
         "codestream.serverUrl": "https://codestream-us1.service.newrelic.com",
-        "java.server.launchMode": "Standard",
         "diffEditor.codeLens": true,
         "workbench.colorTheme": "GitHub Dark Default",
         "remote.extensionKind": {
@@ -45,8 +44,8 @@
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "redhat.java",
-        "codestream.codestream",
-        //  "/home/vscode/codestream.vsix",
+        // "codestream.codestream",
+         "/home/vscode/codestream.vsix",
         "ms-azuretools.vscode-docker"
       ]
     }
