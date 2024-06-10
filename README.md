@@ -2,11 +2,7 @@
 
 Open the following file to demo code-level metrics.
 
-- [InsightsInterceptor](WebPortal/Java/src/main/java/acme/storefront/InsightsInterceptor.java)
-
-Open the following file to demo initiating a log search from the code.
-
-- [ValidateCouponAction](WebPortal/Java/src/main/java/acme/storefront/action/ValidateCouponAction.java)
+- [BrowsePhoneAction](WebPortal/Java/src/main/java/acme/storefront/action/BrowsePhoneAction.java) (note that this used to be [InsightsInterceptor](WebPortal/Java/src/main/java/acme/storefront/InsightsInterceptor.java))
 
 And open the following file to demo saving queries to a NRQL file.
 
@@ -14,7 +10,6 @@ And open the following file to demo saving queries to a NRQL file.
 
 The following files also have codelenses, many of which were acheived via custom instrumentation.
 
-- [BrowsePhoneAction](WebPortal/Java/src/main/java/acme/storefront/action/BrowsePhoneAction.java)
 - [BrowsePhonesAction](WebPortal/Java/src/main/java/acme/storefront/action/BrowsePhonesAction.java)
 - [BrowsePlanAction](WebPortal/Java/src/main/java/acme/storefront/action/BrowsePlanAction.java)
 - [BrowsePlansAction](WebPortal/Java/src/main/java/acme/storefront/action/BrowsePlansAction.java)
