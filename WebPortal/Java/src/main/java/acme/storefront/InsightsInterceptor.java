@@ -28,11 +28,11 @@ public class InsightsInterceptor extends BaseActionInterceptor {
         HttpSession session = servletRequest.getSession();
 
         String username = (String) session.getAttribute("username");
-        if(username != null && !username.equals("")) {
+        if(!Util.isEmpty(username)) {
             JavaAgentFacade.addCustomParameter("username", username);
         }
         String userid = (String) session.getAttribute("userid");
-        if(userid != null && !userid.equals("")) {
+        if(!Util.isEmpty(userid)) {
             JavaAgentFacade.addCustomParameter("userid", userid);
         }
 
